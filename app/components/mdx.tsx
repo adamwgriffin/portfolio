@@ -6,7 +6,6 @@ import { highlight } from "sugar-high";
 import { TweetComponent } from "./tweet";
 import { CaptionComponent } from "./caption";
 import { YouTubeComponent } from "./youtube";
-import { ImageGrid } from "./image-grid";
 
 function CustomLink(props) {
   let href = props.href;
@@ -87,8 +86,8 @@ function createHeading(level) {
         React.createElement("a", {
           href: `#${slug}`,
           key: `link-${slug}`,
-          className: "anchor",
-        }),
+          className: "anchor"
+        })
       ],
       children
     );
@@ -105,7 +104,6 @@ let components = {
   h5: createHeading(5),
   h6: createHeading(6),
   Image: RoundedImage,
-  ImageGrid,
   a: CustomLink,
   StaticTweet: TweetComponent,
   Caption: CaptionComponent,
@@ -113,7 +111,7 @@ let components = {
   code: Code,
   Table,
   del: Strikethrough,
-  Callout,
+  Callout
 };
 
 export function CustomMDX(props) {
