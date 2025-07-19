@@ -9,12 +9,15 @@ const navItems = {
 export function Header() {
   return (
     <header
-      className="flex flex-col md:flex-row md:items-center justify-between"
+      className="flex flex-col md:flex-row md:items-center
+        justify-betwee"
     >
       <div className="flex items-center">
         <Link href="/">
-          <div className="text-3xl font-semibold">Adam Griffin</div>
-          <div>Software Engineer</div>
+          <div className="text-4xl font-semibold">Adam Griffin</div>
+          <div className="text-2xl text-zinc-600 dark:text-zinc-500">
+            Software Engineer
+          </div>
         </Link>
       </div>
       <nav className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
