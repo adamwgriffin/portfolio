@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import { Header } from "./components/header";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -8,7 +8,10 @@ import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./lib/config";
 
-const inter = Inter({ subsets: ["latin"] });
+const geist = Geist({
+  variable: '--font-geist',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
@@ -52,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className}`} suppressHydrationWarning>
+    <html lang="en" className={`${geist.className}`} suppressHydrationWarning>
       <head>
         <link
           rel="alternate"
