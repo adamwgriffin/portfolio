@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CustomMDX } from "app/components/mdx";
+import { CustomMDX } from "@/app/components/mdx/CustomMDX";
 import { formatDate, getBlogPosts } from "app/lib/posts";
 import { metaData } from "app/lib/config";
 
@@ -12,50 +11,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params
-}): Promise<Metadata | undefined> {
-  const { slug } = await params;
-  const post = getBlogPosts().find((post) => post.slug === slug);
-  if (!post) {
-    return;
-  }
+type BlogProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
 
-  const {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image
-  } = post.metadata;
-  const ogImage = image
-    ? image
-    : `${metaData.baseUrl}/og?title=${encodeURIComponent(title)}`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      publishedTime,
-      url: `${metaData.baseUrl}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage
-        }
-      ]
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage]
-    }
-  };
-}
-
-export default async function Blog({ params }) {
+export default async function Blog({ params }: BlogProps) {
   const { slug } = await params;
   const post = getBlogPosts().find((post) => post.slug === slug);
 
