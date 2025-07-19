@@ -1,14 +1,14 @@
 import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
 import React from "react";
-import { CaptionComponent } from "../caption";
-import { TweetComponent } from "../tweet";
-import { YouTubeComponent } from "../youtube";
+import { Callout } from "./Callout";
+import { Caption } from "./Caption";
 import { CustomLink } from "./CustomLink";
 import { HighlightedCode } from "./HighlightedCode";
 import { RoundedImage } from "./RoundedImage";
-import { Table } from "./Table";
-import { Callout } from "./Callout";
 import { Strikethrough } from "./StrikeThrough";
+import { Table } from "./Table";
+import { TweetComponent } from "./Tweet";
+import { YouTubeComponent } from "./YouTube";
 
 function slugify(str: string) {
   return str
@@ -51,7 +51,7 @@ const components = {
   Image: RoundedImage,
   a: CustomLink,
   StaticTweet: TweetComponent,
-  Caption: CaptionComponent,
+  Caption: Caption,
   YouTube: YouTubeComponent,
   code: HighlightedCode,
   Table,

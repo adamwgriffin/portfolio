@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ThemeSwitch } from "./theme-switch";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 const navItems = {
   "/blog": { name: "Blog" },

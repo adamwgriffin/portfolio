@@ -1,11 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { Header } from "./components/header";
+import { Header } from "./components/Header";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-switch";
+import Footer from "./components/Footer";
+import { ThemeProvider } from "./components/ThemeSwitch";
 import { metaData } from "./lib/config";
 
 const geist = Geist({
