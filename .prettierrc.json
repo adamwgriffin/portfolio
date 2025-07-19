@@ -1,6 +1,4 @@
 {
   "trailingComma": "none",
-  "plugins": [
-    "prettier-plugin-classnames"
-  ]
+  "plugins": ["prettier-plugin-classnames"]
 }

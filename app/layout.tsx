@@ -9,15 +9,15 @@ import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./lib/config";
 
 const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
+  variable: "--font-geist",
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
   title: {
     default: metaData.title,
-    template: `%s | ${metaData.title}`,
+    template: `%s | ${metaData.title}`
   },
   description: metaData.description,
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: metaData.baseUrl,
     siteName: metaData.name,
     locale: "en_US",
-    type: "website",
+    type: "website"
   },
   robots: {
     index: true,
@@ -37,20 +37,20 @@ export const metadata: Metadata = {
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+      "max-snippet": -1
+    }
   },
   twitter: {
     title: metaData.name,
-    card: "summary_large_image",
+    card: "summary_large_image"
   },
   icons: {
-    icon: "/favicon.ico",
-  },
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {

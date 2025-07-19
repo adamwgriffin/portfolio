@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   return [
     { format: "rss.xml" },
     { format: "atom.xml" },
-    { format: "feed.json" },
+    { format: "feed.json" }
   ];
 }
 
@@ -41,8 +41,8 @@ export async function GET(
     feedLinks: {
       json: `${BaseUrl}feed.json`,
       atom: `${BaseUrl}atom.xml`,
-      rss: `${BaseUrl}rss.xml`,
-    },
+      rss: `${BaseUrl}rss.xml`
+    }
   });
 
   const allPosts = await getBlogPosts();
@@ -60,9 +60,9 @@ export async function GET(
       description: post.metadata.summary,
       category: categories.map((tag) => ({
         name: tag,
-        term: tag,
+        term: tag
       })),
-      date: new Date(post.metadata.publishedAt),
+      date: new Date(post.metadata.publishedAt)
     });
   });
 
@@ -70,14 +70,14 @@ export async function GET(
     {
       "rss.xml": { content: feed.rss2(), contentType: "application/xml" },
       "atom.xml": { content: feed.atom1(), contentType: "application/xml" },
-      "feed.json": { content: feed.json1(), contentType: "application/json" },
+      "feed.json": { content: feed.json1(), contentType: "application/json" }
     };
 
   const response = responseMap[format];
 
   return new NextResponse(response.content, {
     headers: {
-      "Content-Type": response.contentType,
-    },
+      "Content-Type": response.contentType
+    }
   });
 }

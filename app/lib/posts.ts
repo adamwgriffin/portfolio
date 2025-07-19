@@ -20,7 +20,7 @@ function parseFrontmatter(fileContent: string) {
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
     let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); 
+    value = value.replace(/^['"](.*)['"]$/, "$1");
     metadata[key.trim() as keyof Metadata] = value;
   });
 
@@ -45,7 +45,7 @@ function getMDXData(dir: string) {
     return {
       metadata,
       slug,
-      content,
+      content
     };
   });
 }
@@ -80,7 +80,7 @@ export function formatDate(date: string, includeRelative = false) {
   let fullDate = targetDate.toLocaleString("en-us", {
     month: "short",
     day: "numeric",
-    year: "numeric",
+    year: "numeric"
   });
 
   if (!includeRelative) {
