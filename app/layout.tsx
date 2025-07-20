@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/Footer";
-import { ThemeProvider } from "@/components/ThemeSwitch";
+import { ThemeProvider } from "next-themes";
 import { metaData } from "@/lib/config";
 
 const geist = Geist({
@@ -77,12 +77,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased px-12">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div
             className="max-w-2xl w-full m-auto grid grid-rows-[auto_1fr_auto]
               min-h-screen"
