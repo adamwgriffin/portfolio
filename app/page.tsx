@@ -5,15 +5,17 @@ export default function Page() {
     <section className="grow">
       <Image
         src="/adam-1-transparent.png"
-        alt="Profile photo"
-        className="rounded-full bg-fuchsia-100 block
-          mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
+        alt="Photo of Adam Griffin"
+        className="rounded-full bg-fuchsia-100 block mt-0 lg:mb-5 mb-10 mx-auto
+          sm:float-right sm:ml-5 sm:mb-5"
         unoptimized
         width={160}
         height={160}
         priority
       />
-      <div className="prose prose-neutral dark:prose-invert">
+      <div
+        className="prose prose-p:text-zinc-600 dark:prose-p:dark:text-zinc-300"
+      >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac elit
           tempus, suscipit eros a, gravida metus. Sed ac congue dui. Vivamus

@@ -9,7 +9,7 @@ const navItems = {
 export function Header() {
   return (
     <header
-      className="flex flex-col md:flex-row md:items-center justify-between py-12
+      className="flex flex-col md:flex-row md:items-center justify-between py-14
         md:pb-6"
     >
       <div className="flex items-center">
