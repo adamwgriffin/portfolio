@@ -1,11 +1,32 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { projects } from "./project-data";
 
 export const metadata: Metadata = {
   title: "Projects",
   description: "Nextfolio Projects"
 };
+
+export type Project = {
+  title: string;
+  year: number;
+  description: string;
+  url: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: "Mithril AI",
+    year: 2024,
+    description: "Open science AI resarch lab",
+    url: "https://github.com/mithrilai"
+  },
+  {
+    title: "OpenDeepLearning",
+    year: 2023,
+    description: "Open source AI education resources",
+    url: "https://opendeeplearning.xyz/"
+  }
+];
 
 export default function Projects() {
   return (
