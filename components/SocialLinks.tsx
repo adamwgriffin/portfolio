@@ -1,5 +1,5 @@
 import { SocialLink } from "./SocialLink";
-import { socialLinks } from "@/app/lib/config";
+import { socialLinks } from "@/lib/config";
 import { FaGithub, FaLinkedinIn, FaRss } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 

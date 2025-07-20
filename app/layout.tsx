@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeSwitch";
-import { metaData } from "@/app/lib/config";
+import { metaData } from "@/lib/config";
 
 const geist = Geist({
   variable: "--font-geist",
