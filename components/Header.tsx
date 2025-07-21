@@ -8,31 +8,43 @@ const navItems = {
 
 export function Header() {
   return (
-    <header
-      className="flex flex-col md:flex-row md:items-center justify-between py-14
-        md:pb-6"
-    >
-      <div className="flex items-center">
+    <header className="pt-12 pb-6">
+      <div className="text-center md:text-left">
         <Link href="/">
-          <div className="text-4xl font-semibold">Adam Griffin</div>
-          <div className="text-2xl text-zinc-600 dark:text-zinc-500">
+          <div
+            className="text-4xl font-semibold transition-all
+              hover:text-neutral-600"
+          >
+            Adam Griffin
+          </div>
+          <div
+            className="text-2xl text-zinc-600 dark:text-zinc-500
+              hover:text-zinc-500"
+          >
             Software Engineer
           </div>
         </Link>
+        <div
+          className="flex flex-col items-center md:flex-row md:justify-between
+            pt-4 gap-4"
+        >
+          <nav className="flex gap-4">
+            {Object.entries(navItems).map(([path, { name }]) => (
+              <Link
+                key={path}
+                href={path}
+                className="transition-all hover:text-neutral-500
+                  dark:hover:text-neutral-200 flex align-middle relative"
+              >
+                {name}
+              </Link>
+            ))}
+          </nav>
+          <div className="h-7">
+            <ThemeSwitch />
+          </div>
+        </div>
       </div>
-      <nav className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
-        {Object.entries(navItems).map(([path, { name }]) => (
-          <Link
-            key={path}
-            href={path}
-            className="transition-all hover:text-neutral-500
-              dark:hover:text-neutral-200 flex align-middle relative"
-          >
-            {name}
-          </Link>
-        ))}
-        <ThemeSwitch />
-      </nav>
     </header>
   );
 }

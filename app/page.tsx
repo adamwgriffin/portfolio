@@ -6,8 +6,8 @@ export default function Page() {
       <Image
         src="/adam-1-transparent.png"
         alt="Photo of Adam Griffin"
-        className="rounded-full bg-fuchsia-100 block mt-0 lg:mb-5 mb-10 mx-auto
-          sm:float-right sm:ml-5 sm:mb-5"
+        className="rounded-full bg-fuchsia-100 block mt-0 lg:mb-5 mb-6 mx-auto
+          sm:float-right"
         unoptimized
         width={160}
         height={160}

@@ -36,36 +36,34 @@ export function ThemeSwitch() {
   }
 
   return (
-    <div>
-      <AnimatedBackground
-        className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
-        defaultValue={theme}
-        transition={{
-          type: "spring",
-          duration: 0.4
-        }}
-        enableHover={false}
-        onValueChange={(id) => {
-          if (id) setTheme(id);
-        }}
-      >
-        {themesOptions.map((theme) => {
-          return (
-            <button
-              key={theme.id}
-              className="inline-flex h-7 w-7 items-center justify-center
-                text-zinc-500 transition-colors duration-100
-                focus-visible:outline-2 data-[checked=true]:text-zinc-950
-                dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
-              type="button"
-              aria-label={`Switch to ${theme.label} theme`}
-              data-id={theme.id}
-            >
-              {theme.icon}
-            </button>
-          );
-        })}
-      </AnimatedBackground>
-    </div>
+    <AnimatedBackground
+      className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
+      defaultValue={theme}
+      transition={{
+        type: "spring",
+        duration: 0.4
+      }}
+      enableHover={false}
+      onValueChange={(id) => {
+        if (id) setTheme(id);
+      }}
+    >
+      {themesOptions.map((theme) => {
+        return (
+          <button
+            key={theme.id}
+            className="inline-flex h-7 w-7 items-center justify-center
+              text-zinc-500 transition-colors duration-100
+              focus-visible:outline-2 data-[checked=true]:text-zinc-950
+              dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
+            type="button"
+            aria-label={`Switch to ${theme.label} theme`}
+            data-id={theme.id}
+          >
+            {theme.icon}
+          </button>
+        );
+      })}
+    </AnimatedBackground>
   );
 }
