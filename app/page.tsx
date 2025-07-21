@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <section className="grow">
+    <section>
       <Image
         src="/adam-1-transparent.png"
         alt="Photo of Adam Griffin"
