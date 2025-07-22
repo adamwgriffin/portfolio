@@ -7,6 +7,7 @@ const navItems = {
   "/": { name: "Home" },
   "/experience": { name: "Experience" },
   "/projects": { name: "Projects" },
+  "/stack": { name: "Tech Stack" },
   "/contact": { name: "Contact" }
 };
 
