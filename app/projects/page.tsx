@@ -10,14 +10,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <AnimatedProseSection>
-      <Image
-        src="/awsom-site.jpg"
-        alt="The Awsom website"
-        width={989}
-        height={595}
-        priority
-        className="rounded-md border border-gray-100 shadow-lg"
-      />
+      <h1>The &quot;Awsom&quot; Project</h1>
       <p>
         For the past few years I&apos;ve been working on a real estate search
         app called{" "}
@@ -34,6 +27,18 @@ export default function Projects() {
         is hosted on MongoDB Atlas, and I&apos;m using ImageKit to host my
         images.
       </p>
+
+      <figure>
+        <Image
+          src="/awsom-site.jpg"
+          alt="The Awsom website"
+          width={989}
+          height={595}
+          priority
+          className="rounded-md border border-gray-100 shadow-lg"
+        />
+        <figcaption>The awsome.homes website.</figcaption>
+      </figure>
 
       <p>
         Right now the app only includes fake listing data for Seattle
