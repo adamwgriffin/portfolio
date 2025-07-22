@@ -1,7 +1,6 @@
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Navigation } from "@/components/Navigation";
 import Link from "next/link";
-import { Suspense } from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
 
 export async function Header() {
@@ -30,13 +29,9 @@ export async function Header() {
           className="flex flex-col items-center md:flex-row md:justify-between
             pt-4 gap-4"
         >
-          <Suspense>
-            <Navigation />
-          </Suspense>
+          <Navigation />
           <div className="h-7">
-            <Suspense>
-              <ThemeSwitch />
-            </Suspense>
+            <ThemeSwitch />
           </div>
         </div>
       </div>
