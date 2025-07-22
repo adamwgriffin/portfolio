@@ -41,7 +41,7 @@ html {
 }
 
 .prose {
-  @apply text-[#000000] dark:text-[#FFFFFF];
+  @apply text-zinc-600 dark:text-zinc-300;
 }
 
 .prose .anchor {
@@ -93,26 +93,20 @@ html {
 }
 
 .prose img {
-  /* Don't apply styles to next/image */
   @apply m-0;
 }
 
-.prose h2,
+.prose h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-medium;
+  @apply text-zinc-600 dark:text-zinc-300 text-2xl font-medium;
 }
 
 .prose strong {
   @apply font-medium;
-}
-
-.prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
 }
 
 .prose-quoteless blockquote p:first-of-type::before,

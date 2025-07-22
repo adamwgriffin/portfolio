@@ -5,11 +5,5 @@ export function AnimatedProseSection({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <AnimatedSection
-      className="prose prose-p:text-zinc-600 dark:prose-p:dark:text-zinc-300"
-    >
-      {children}
-    </AnimatedSection>
-  );
+  return <AnimatedSection className="prose">{children}</AnimatedSection>;
 }
