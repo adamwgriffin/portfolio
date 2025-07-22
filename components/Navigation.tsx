@@ -14,7 +14,7 @@ export function Navigation() {
   const currentPathname = usePathname();
 
   return (
-    <nav className="flex gap-4">
+    <nav className="flex flex-wrap justify-center gap-4">
       {Object.entries(navItems).map(([path, { name }]) => (
         <Link
           key={path}
@@ -25,7 +25,7 @@ export function Navigation() {
             dark:not-aria-[current=page]:hover:text-neutral-200 flex
             align-middle relative aria-[current=page]:text-purple-500
             dark:aria-[current=page]:text-fuchsia-300
-            aria-[current=page]:font-bold"
+            aria-[current=page]:font-bold whitespace-nowrap"
         >
           {name}
         </Link>
