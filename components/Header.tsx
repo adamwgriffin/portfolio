@@ -5,7 +5,7 @@ import { ThemeSwitch } from "./ThemeSwitch";
 
 export async function Header() {
   return (
-    <header className="pt-12 pb-6">
+    <header className="py-12">
       <div className="text-center md:text-left">
         <Link href="/">
           <div
