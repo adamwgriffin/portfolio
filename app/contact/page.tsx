@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnimatedProseSection } from "@/components/AnimatedProseSection";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -7,9 +8,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section
-      className="prose prose-p:text-zinc-600 dark:prose-p:dark:text-zinc-300"
-    >
+    <AnimatedProseSection>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac elit
         tempus, suscipit eros a, gravida metus. Sed ac congue dui. Vivamus
@@ -17,6 +16,6 @@ export default function Page() {
         risus risus, id vulputate purus luctus in. Donec ut molestie odio, vitae
         ultricies enim.
       </p>
-    </section>
+    </AnimatedProseSection>
   );
 }

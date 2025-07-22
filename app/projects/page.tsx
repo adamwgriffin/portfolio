@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AnimatedProseSection } from "@/components/AnimatedProseSection";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -8,9 +9,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <section
-      className="prose prose-p:text-zinc-600 dark:prose-p:dark:text-zinc-300"
-    >
+    <AnimatedProseSection>
       <Image
         src="/awsom-site.jpg"
         alt="The Awsom website"
@@ -91,6 +90,6 @@ export default function Projects() {
         service, this time written in Go that uses this PostGIS database, but
         progress has been slower on that front.
       </p>
-    </section>
+    </AnimatedProseSection>
   );
 }

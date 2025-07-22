@@ -1,8 +1,9 @@
+import { AnimatedProseSection } from "@/components/AnimatedProseSection";
 import Image from "next/image";
 
 export default function Page() {
   return (
-    <section>
+    <AnimatedProseSection>
       <Image
         src="/adam-1-transparent.png"
         alt="Photo of Adam Griffin"
@@ -13,9 +14,8 @@ export default function Page() {
         height={160}
         priority
       />
-      <div
-        className="prose prose-p:text-zinc-600 dark:prose-p:dark:text-zinc-300"
-      >
+      <div className="prose prose-p:text-zinc-600
+        dark:prose-p:dark:text-zinc-300">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac elit
           tempus, suscipit eros a, gravida metus. Sed ac congue dui. Vivamus
@@ -39,6 +39,6 @@ export default function Page() {
           porta, et consequat quam viverra.
         </p>
       </div>
-    </section>
+    </AnimatedProseSection>
   );
 }

@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { ThemeSwitch } from "./ThemeSwitch";
+import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Navigation } from "@/components/Navigation";
+import Link from "next/link";
 import { Suspense } from "react";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 export async function Header() {
   return (
@@ -14,12 +15,16 @@ export async function Header() {
           >
             Adam Griffin
           </div>
-          <div
+          <TextEffect
+            as="p"
+            preset="fade"
+            per="char"
             className="text-2xl text-zinc-600 dark:text-zinc-500
               hover:text-zinc-500"
+            delay={0.5}
           >
             Software Engineer
-          </div>
+          </TextEffect>
         </Link>
         <div
           className="flex flex-col items-center md:flex-row md:justify-between

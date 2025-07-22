@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 import { metaData } from "@/lib/config";
+import { AnimatedMain } from "@/components/AnimatedMain";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -83,7 +84,7 @@ export default function RootLayout({
               min-h-screen"
           >
             <Header />
-            <main>{children}</main>
+            <AnimatedMain>{children}</AnimatedMain>
             <Footer />
             <Analytics />
             <SpeedInsights />
