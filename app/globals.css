@@ -98,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-zinc-600 dark:text-zinc-300 text-2xl font-medium;
+  @apply text-zinc-600 dark:text-zinc-300 font-medium m-0;
 }
 
 .prose strong {
