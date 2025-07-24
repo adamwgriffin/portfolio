@@ -9,6 +9,5 @@ export const metaData = {
 export const socialLinks = {
   github: "https://github.com/adamwgriffin",
   linkedin: "https://www.linkedin.com/in/adamwgriffin/",
-  email: "mailto:job@adamgriffin.io",
-  bluesky: "https://bsky.app/profile/adamwgriffin.bsky.social"
+  email: "mailto:job@adamgriffin.io"
 };

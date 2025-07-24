@@ -1,6 +1,6 @@
 import { SocialLink } from "./SocialLink";
 import { socialLinks } from "@/lib/config";
-import { FaGithub, FaLinkedinIn, FaBluesky, FaRss } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaRss } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 
 export function SocialLinks() {
@@ -17,9 +17,6 @@ export function SocialLinks() {
       </SocialLink>
       <SocialLink href={socialLinks.email}>
         <TbMailFilled />
-      </SocialLink>
-      <SocialLink href={socialLinks.bluesky}>
-        <FaBluesky />
       </SocialLink>
       <a href="/rss.xml" target="_self">
         <FaRss />

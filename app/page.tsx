@@ -59,10 +59,6 @@ export default function Page() {
         >
           LinkedIn
         </a>
-        . If you just want to connect, check me out on{" "}
-        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-          Bluesky
-        </a>
         .
       </p>
     </AnimatedProseSection>
