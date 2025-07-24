@@ -12,25 +12,43 @@ export default function Page() {
       <div className="prose mb-12">
         <p>
           My experience mainly involves working as a full stack developer, with
-          Ruby on Rails on the backend and React, Angular or Vue for the
-          frontend on the frontend. The apps I worked on had a kind of hybrid
-          monolith architecture where the app had its own database for
-          app-exclusive data but rely on several different microservices for
-          things like authentication or sending email notifications. I
-          occasionally worked on services too, such as our payment service.
+          Ruby on Rails on the backend and React, Angular or Vue on the
+          frontend, with Postgresql as the database. The apps I worked on had a
+          kind of hybrid monolith architecture where the app had its own
+          database for data it controlled but relied on several different
+          microservices for things like authentication or sending email
+          notifications. I occasionally worked on services too, such as our
+          payment service. You can check out the search feature I worked on at
+          several brokerages sites, such as{" "}
+          <a
+            href="https://cbdanforth.sites.cbmoxi.com/search"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Coldwell Banker Danforth
+          </a>{" "}
+          or{" "}
+          <a
+            href="https://www.windermere.com/search"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Windermere
+          </a>
+          .
         </p>
         <p>
           Although I&apos;ve only worked for one company as a software engineer,
           I worked at that company for a long time, on many different projects.
           I got my start as an engineer by working my way up through the
           company. I began as an Office Manager, then became a Support Rep, then
-          finally a develop.
+          finally a developer.
         </p>
         <p>
           I&apos;m a self-taught developer. I learned a lot on the job, but I
-          had been coding as a hobby for years before that time. I often times
-          would use code to automate work tasks when I was working in
-          non-techical roles in order to make myself more productive.
+          had been coding as a hobby for years before that. I often times would
+          use code to automate work tasks when I was working in non-techical
+          roles in order to make myself more productive.
         </p>
 
         <p>These are the two main jobs I had as a developer:</p>
@@ -109,10 +127,10 @@ export default function Page() {
           <ul>
             <li>Created Support Admin app for Client Services department</li>
             <li>
-              Customized theme for our Zendesk installation and made it
-              responsive
+              Investigated issues for Account Management team. These were
+              important issues that had been escalated by our clients directly
+              to whoever was handling their account.
             </li>
-            <li>Investigated issues for Account Management team</li>
             <li>
               Managed &quot;Support Triage&quot; in our ticketing system to
               ensure ticket quality and handle any issues that I was able to fix
