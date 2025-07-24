@@ -19,18 +19,19 @@ export default function Page() {
         I&apos;m a web developer living in Seattle, WA. My tech stack has
         primarily been Ruby on Rails, Postgres, React and Vue in my career. My
         main role has been as a full stack developer but I&apos;ve always had a
-        strong interest in the frontend side of development. I&apos;ve worked on
-        several real estate (Proptech) SaaS apps over the years.
+        strong interest in frontend development. I&apos;ve worked on several
+        real estate (Proptech) SaaS apps over the years, such as listing search
+        and a CRM.
       </p>
       <p>
-        In my spare time I&apos;m mostly interested in writing Typescript with
-        Next.js and Node. I&apos;m fond of{" "}
+        In my spare time I mostly use Typescript with Next.js and Node. I&apos;m
+        fond of{" "}
         <a href="https://koajs.com/#introduction" target="_blank">
           Koa
         </a>{" "}
-        as backend framework too. I use Mongo for its ergonomics and rapid
-        development but I also enjoy Postgres for its power and reliability.
-        Check out <Link href="/projects">my projects</Link>, or my{" "}
+        as a backend framework too. I use MongoDB a lot because I find it easy
+        to iterate quickly with it, but I&apos;m also a big fan of Postgres. You
+        can check out <Link href="/projects">my projects</Link>, or my{" "}
         <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
           Github
         </a>
