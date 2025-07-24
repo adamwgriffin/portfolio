@@ -4,9 +4,49 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+@layer base {
+  ::selection {
+    background-color: var(--color-purple-400);
+    color: #fefefe;
+  }
+
+  html {
+    min-width: 360px;
+  }
+
+  pre::-webkit-scrollbar {
+    display: none;
+  }
+
+  pre {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Remove Safari input shadow on mobile */
+  input[type="text"],
+  input[type="email"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  table {
+    display: block;
+    max-width: fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@layer components {
+  .title {
+    text-wrap: balance;
+  }
+
+  .anchor:hover {
+    @apply visible;
+  }
 }
 
 /* Light theme colors */
@@ -36,10 +76,6 @@
   --sh-entity: #e25a1c;
 }
 
-html {
-  min-width: 360px;
-}
-
 .prose {
   @apply text-zinc-600 dark:text-zinc-300;
 }
@@ -51,10 +87,6 @@ html {
   width: 80%;
   max-width: 700px;
   cursor: pointer;
-}
-
-.anchor:hover {
-  @apply visible;
 }
 
 .prose a {
@@ -110,39 +142,11 @@ h6 {
   content: none;
 }
 
-pre::-webkit-scrollbar {
-  display: none;
-}
-
-pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Remove Safari input shadow on mobile */
-input[type="text"],
-input[type="email"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .prose .tweet a {
   text-decoration: inherit;
   font-weight: 500;
 }
 
-table {
-  display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
 .prose .callout > p {
   margin: 0;
-}
-
-.title {
-  text-wrap: balance;
 }
