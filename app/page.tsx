@@ -1,5 +1,7 @@
 import { AnimatedProseSection } from "@/components/AnimatedProseSection";
 import Image from "next/image";
+import Link from "next/link";
+import { socialLinks } from "@/lib/config";
 
 export default function Page() {
   return (
@@ -14,26 +16,53 @@ export default function Page() {
         priority
       />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac elit
-        tempus, suscipit eros a, gravida metus. Sed ac congue dui. Vivamus
-        consectetur consectetur posuere. Morbi rhoncus odio diam. Sed ultricies
-        risus risus, id vulputate purus luctus in. Donec ut molestie odio, vitae
-        ultricies enim.
+        I&apos;m a web developer living in Seattle, WA. My tech stack has
+        primarily been Ruby on Rails, Postgres, React and Vue in my career. My
+        main role has been as a full stack developer but I&apos;ve always had a
+        strong interest in the frontend side of development. I&apos;ve worked on
+        several real estate (Proptech) SaaS apps over the years.
       </p>
       <p>
-        In tempus volutpat iaculis. Donec felis turpis, dictum hendrerit mollis
-        in, mollis non mi. Quisque ut lacus a sem ultrices dignissim. Ut
-        malesuada purus in purus eleifend, et laoreet arcu varius. Mauris
-        aliquet cursus magna, sit amet venenatis ex malesuada egestas. Quisque
-        pharetra euismod nisl ut semper. Donec porttitor mattis augue, et
-        posuere ligula ornare a. Suspendisse leo mi, mollis cursus tempus sit
-        amet, lobortis ut quam. Curabitur sit amet dui augue.
+        In my spare time I&apos;m mostly interested in writing Typescript with
+        Next.js and Node. I&apos;m fond of{" "}
+        <a href="https://koajs.com/#introduction" target="_blank">
+          Koa
+        </a>{" "}
+        as backend framework too. I use Mongo for its ergonomics and rapid
+        development but I also enjoy Postgres for its power and reliability.
+        Check out <Link href="/projects">my projects</Link>, or my{" "}
+        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+          Github
+        </a>
+        , to see some of the stuff I work on.
       </p>
       <p>
-        Etiam ante nisl, suscipit ac suscipit vitae, molestie quis elit. Nam
-        auctor lacinia felis sed sollicitudin. Morbi vitae dignissim velit. Cras
-        a nulla pharetra dui auctor lacinia. Nam laoreet diam vitae leo porta,
-        et consequat quam viverra.
+        Occasionally I dabble in Go and the Gin web framework. I enjoy the
+        emphasis on simplicity in the language but I have yet to truly become a
+        &quot;Gopher.&quot; Maybe someday. I&apos;ve also been looking at Kotlin
+        but have yet to dive in. Recently, I&apos;ve taken more of an interest
+        in DevOps. I&apos;ve taken a class on Kubernetes and written a few
+        things with it. I&apos;m also interested in IAC tools like Terraform. So
+        much tech to learn, so little time!
+      </p>
+      <p>
+        If you have a role you think I might be interested in, hit me up via{" "}
+        <a href={socialLinks.email} target="_blank" rel="noopener noreferrer">
+          email
+        </a>{" "}
+        or message me on{" "}
+        <a
+          href={socialLinks.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        . If you just want to connect, check me out on{" "}
+        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+          Bluesky
+        </a>
+        .
       </p>
     </AnimatedProseSection>
   );
