@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <AnimatedProseSection>
-      <h1>The &quot;Awsom&quot; Project</h1>
+      <h1 className="text-2xl">The &quot;Awsom&quot; Project</h1>
       <p>
         For the past few years I&apos;ve been working on a real estate search
         app called{" "}
@@ -18,14 +18,13 @@ export default function Projects() {
           &quot;Awsom&quot;
         </a>
         . It&apos;s not meant as a serious endeavor, more of a learning tool. I
-        wanted to use it as a means to get better with <em>Next.js</em>,{" "}
-        <em>Typescript</em> and <em>Node</em>, as well as a host of other
-        things. I chose a real estate search app for the project mostly because
-        it was something I was already familiar with from my work experience. I
-        also wanted to understand how I could improve upon the kind of app I had
-        worked on previously. I&apos;m hosting the app on Vercel. The database
-        is hosted on MongoDB Atlas, and I&apos;m using ImageKit to host my
-        images.
+        wanted to use it as a means to get better with Next.js, Typescript and
+        Node, as well as a host of other things. I chose a real estate search
+        app for the project mostly because it was something I was already
+        familiar with from my work experience. I also wanted to understand how I
+        could improve upon the kind of app I had worked on previously. I&apos;m
+        hosting the app on Vercel. The database is hosted on MongoDB Atlas, and
+        I&apos;m using ImageKit to host my images.
       </p>
 
       <figure>
@@ -42,27 +41,26 @@ export default function Projects() {
 
       <p>
         Right now the app only includes fake listing data for Seattle
-        neighborhoods. Using <em>Node</em> as a scripting language to generate
-        this fake data was actually a whole learning experience in and of
-        itself. I was able to get some Seattle neighborhood boundary data for
-        free through the city&apos;s website and use it to take advantage of{" "}
-        <em>MongoDBs</em> built-in geospatial search capabilities. However, the
-        experience with Mongo as a geospatial database wasn&apos;t as seamless
-        as one would like. I ended up having to supplement some functionality
-        with <em>Turf.js</em> (which is a great library). Otherwise, it worked
-        well enough for a rapid development paradigm.
+        neighborhoods. Generating this fake data was actually a whole learning
+        experience in and of itself. I was able to get some Seattle neighborhood
+        boundary data for free through the city&apos;s website and use it to
+        take advantage of MongoDBs built-in geospatial search capabilities.
+        However, the experience with Mongo as a geospatial database wasn&apos;t
+        as seamless as one would like. I ended up having to supplement some
+        functionality with Turf.js (which is a great library). Otherwise, it
+        worked well enough for a rapid development paradigm.
       </p>
 
       <p>
         Iterating through continuous improvement has actually been a theme of
         this project. I originally started out with an{" "}
         <a href="https://github.com/adamwgriffin/vue-search" target="_blank">
-          app written in <em>Vue</em>
+          app written in Vue
         </a>{" "}
         that was much closer to the app I worked on professionally. After that,
         I pivoted to something more challenging:{" "}
         <a href="https://github.com/adamwgriffin/search" target="_blank">
-          rewriting everything in <em>Next.js</em> with <em>Typescript</em>
+          rewriting everything in Next.js with Typescript
         </a>
         . That version is they one that is currently being used for the
         awsom.homes site.
@@ -80,9 +78,9 @@ export default function Projects() {
         >
           separate real estate listing search service
         </a>{" "}
-        written in <em>Koa.js</em>. For the frontend, I chose a simpler
-        approach, using <em>Tailwind</em> with <em>Shadcn</em> for components,
-        rather than writing everything from scratch, as I had previously done.
+        written in Koa. For the frontend, I chose a simpler approach, using
+        Tailwind with Shadcn for components, rather than writing everything from
+        scratch, as I had previously done.
       </p>
 
       <p>
