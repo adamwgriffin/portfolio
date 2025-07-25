@@ -18,7 +18,11 @@ export function SocialLinks() {
       <SocialLink href={socialLinks.email}>
         <TbMailFilled />
       </SocialLink>
-      <a href="/rss.xml" target="_self">
+      <a
+        href="/rss.xml"
+        target="_self"
+        className="transition-all duration-350 hover:text-purple-500/100"
+      >
         <FaRss />
       </a>
     </div>

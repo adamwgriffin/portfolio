@@ -5,7 +5,12 @@ export type SocialLinkProps = {
 
 export function SocialLink({ href, children }: SocialLinkProps) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="transition-all duration-350 hover:text-purple-500/100"
+    >
       {children}
     </a>
   );
