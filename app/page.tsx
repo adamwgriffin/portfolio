@@ -1,11 +1,11 @@
-import { AnimatedProseSection } from "@/components/AnimatedProseSection";
+import { AnimatedSection } from "@/components/AnimatedSection";
 import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "@/lib/config";
 
 export default function Page() {
   return (
-    <AnimatedProseSection>
+    <AnimatedSection className="prose">
       <Image
         src="/adam-1-transparent.png"
         alt="Photo of Adam Griffin"
@@ -61,6 +61,6 @@ export default function Page() {
         </a>
         .
       </p>
-    </AnimatedProseSection>
+    </AnimatedSection>
   );
 }
