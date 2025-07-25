@@ -1,39 +1,38 @@
+"use client";
+
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Navigation } from "@/components/Navigation";
-import Link from "next/link";
 import { ThemeSwitch } from "./ThemeSwitch";
+import { AnimatedFadeInDiv } from "@/components/AnimatedFadeInDiv";
 
-export async function Header() {
+export function Header() {
   return (
     <header className="py-12">
       <div className="text-center md:text-left">
-        <Link href="/">
-          <div
-            className="text-4xl font-semibold transition-all
-              hover:text-neutral-600"
-          >
-            Adam Griffin
-          </div>
-          <TextEffect
-            as="p"
-            preset="fade"
-            per="char"
-            className="text-2xl text-zinc-600 dark:text-zinc-500
-              hover:text-zinc-500"
-            delay={0.5}
-          >
-            Software Engineer
-          </TextEffect>
-        </Link>
-        <div
+        <TextEffect
+          per="char"
+          className="text-6xl font-semibold bg-gradient-to-r from-violet-400
+            to-pink-200 to-50% bg-clip-text text-transparent"
+        >
+          Adam Griffin
+        </TextEffect>
+        <TextEffect
+          preset="fade"
+          per="char"
+          className="text-2xl text-zinc-400 dark:text-zinc-400"
+          delay={0.8}
+        >
+          Software Engineer
+        </TextEffect>
+        <AnimatedFadeInDiv
           className="flex flex-col items-center md:flex-row md:justify-between
-            pt-4 gap-4"
+            pt-8 gap-4"
         >
           <Navigation />
           <div className="h-7">
             <ThemeSwitch />
           </div>
-        </div>
+        </AnimatedFadeInDiv>
       </div>
     </header>
   );
