@@ -1,18 +1,17 @@
 import { metaData } from "@/lib/config";
 import { SocialLinks } from "./SocialLinks";
+import { AnimatedFadeInDiv } from "@/components/AnimatedFadeInDiv";
 
 export function Footer() {
   return (
-    <footer
-      className="flex justify-between text-sm text-zinc-600 dark:text-zinc-300
-        py-12"
-    >
-      <div>
+    <footer className="flex justify-between text-zinc-600 dark:text-zinc-300
+      py-12">
+      <AnimatedFadeInDiv className="text-xs">
         <time>© {new Date().getFullYear()}</time> {metaData.title}
-      </div>
-      <div className="flex items-center gap-4">
+      </AnimatedFadeInDiv>
+      <AnimatedFadeInDiv className="flex items-center gap-4">
         <SocialLinks />
-      </div>
+      </AnimatedFadeInDiv>
     </footer>
   );
 }

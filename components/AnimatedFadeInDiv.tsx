@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 
 export type AnimatedFadeInDivProps = React.ComponentProps<typeof motion.div>;
