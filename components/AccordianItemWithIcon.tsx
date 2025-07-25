@@ -26,7 +26,9 @@ export function AccordianItemWithIcon({
             className="h-4 w-4 text-zinc-950 transition-transform duration-200
               group-data-expanded:rotate-90 dark:text-zinc-50"
           />
-          <div className="ml-2 text-zinc-950 dark:text-zinc-50">{title}</div>
+          <div className="ml-2 text-zinc-950 dark:text-zinc-50 font-semibold">
+            {title}
+          </div>
         </div>
       </AccordionTrigger>
       <AccordionContent className="origin-left">{children}</AccordionContent>
