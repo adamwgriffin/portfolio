@@ -4,23 +4,20 @@ import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Navigation } from "@/components/Navigation";
 import { ThemeSwitch } from "./ThemeSwitch";
 import { AnimatedFadeInDiv } from "@/components/AnimatedFadeInDiv";
+import { AdamGriffinLogo } from "@/components/AdamGriffinLogo";
 
 export function Header() {
   return (
     <header className="py-12">
       <div className="text-center md:text-left">
-        <TextEffect
-          per="char"
-          className="text-6xl font-semibold bg-gradient-to-r from-violet-400
-            to-pink-200 to-50% bg-clip-text text-transparent"
-        >
-          Adam Griffin
-        </TextEffect>
+        <AnimatedFadeInDiv>
+          <AdamGriffinLogo className="md:w-xl mb-2" />
+        </AnimatedFadeInDiv>
         <TextEffect
           preset="fade"
           per="char"
-          className="text-2xl text-zinc-400 dark:text-zinc-400"
-          delay={0.8}
+          className="text-3xl text-zinc-400 dark:text-zinc-400"
+          delay={0.4}
         >
           Software Engineer
         </TextEffect>
