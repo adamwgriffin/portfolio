@@ -9,8 +9,8 @@ export default function Page() {
       <Image
         src="/adam-1-transparent.png"
         alt="Photo of Adam Griffin"
-        className="rounded-full bg-fuchsia-100 block mx-auto sm:mb-1
-          sm:float-right"
+        className="rounded-full block mx-auto sm:mb-1 sm:float-right
+          bg-gradient-to-tr from-purple-300 to-pink-100 to-50%"
         width={160}
         height={160}
         priority
