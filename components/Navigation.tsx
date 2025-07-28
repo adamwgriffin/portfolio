@@ -25,7 +25,7 @@ export function Navigation() {
             dark:not-aria-[current=page]:hover:text-violet-300/100
             aria-[current=page]:text-purple-500
             dark:aria-[current=page]:text-violet-300
-            aria-[current=page]:font-bold"
+            aria-[current=page]:font-bold text-xl"
         >
           {name}
         </Link>

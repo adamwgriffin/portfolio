@@ -11,12 +11,12 @@ export function Header() {
     <header className="py-12">
       <div className="text-center md:text-left">
         <AnimatedFadeInDiv>
-          <AdamGriffinLogo className="md:w-xl mb-2" />
+          <AdamGriffinLogo className="mb-2 max-w-xl" />
         </AnimatedFadeInDiv>
         <TextEffect
           preset="fade"
           per="char"
-          className="text-3xl text-zinc-400"
+          className="text-3xl sm:text-4xl text-zinc-400"
           delay={0.4}
         >
           Software Engineer
