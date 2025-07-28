@@ -16,7 +16,7 @@ export function Header() {
         <TextEffect
           preset="fade"
           per="char"
-          className="text-3xl text-zinc-400 dark:text-zinc-400"
+          className="text-3xl text-zinc-400"
           delay={0.4}
         >
           Software Engineer
