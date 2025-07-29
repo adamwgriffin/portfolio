@@ -7,13 +7,13 @@ My portfolio. Based on [Nextfolio](https://github.com/3p5ilon/Nextfolio).
 Install the dependencies.
 
 ```
-pnpm install
+bun install
 ```
 
 Start the development server:
 
 ```
-pnpm dev
+bun dev
 ```
 
 The server will be running at [http://localhost:3000](http://localhost:3000).
