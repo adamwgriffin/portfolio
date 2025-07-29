@@ -42,13 +42,9 @@ export default function Page() {
           I worked at that company for a long time, on many different projects.
           I got my start as an engineer by working my way up through the
           company. I began as an Office Manager, then became a Support Rep, then
-          finally a developer.
-        </p>
-        <p>
-          I&apos;m a self-taught developer. I learned a lot on the job, but I
-          had been coding as a hobby for years before that. I often times would
-          use code to automate work tasks when I was working in non-techical
-          roles in order to make myself more productive.
+          finally a developer. I&apos;m a self-taught developer. I learned a lot
+          of what I know on the job but I also had been coding as a hobby for
+          years before that.
         </p>
 
         <p>These are the two main jobs I had as a developer:</p>
