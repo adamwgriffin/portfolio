@@ -20,19 +20,11 @@ export default function Page() {
           notifications. I occasionally worked on services too, such as our
           payment service. You can check out the search feature I worked on at
           several brokerages sites, such as{" "}
-          <a
-            href="https://cbdanforth.sites.cbmoxi.com/search"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://cbdanforth.sites.cbmoxi.com/search" target="_blank">
             Coldwell Banker Danforth
           </a>{" "}
           or{" "}
-          <a
-            href="https://www.windermere.com/search"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.windermere.com/search" target="_blank">
             Windermere
           </a>
           .

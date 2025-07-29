@@ -8,7 +8,6 @@ export function SocialLink({ href, children }: SocialLinkProps) {
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
       className="transition-all duration-300 hover:text-zinc-400"
     >
       {children}

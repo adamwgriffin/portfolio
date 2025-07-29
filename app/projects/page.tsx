@@ -52,20 +52,12 @@ export default function Projects() {
       <p>
         Iterating through continuous improvement has actually been a theme of
         this project. I originally started out with an{" "}
-        <a
-          href="https://github.com/adamwgriffin/vue-search"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/adamwgriffin/vue-search" target="_blank">
           app written in Vue
         </a>{" "}
         that was much closer to the app I worked on professionally. After that,
         I pivoted to{" "}
-        <a
-          href="https://github.com/adamwgriffin/search"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/adamwgriffin/search" target="_blank">
           rewriting everything in Next.js with Typescript
         </a>
         . That version is they one that is currently being used for the
@@ -74,18 +66,13 @@ export default function Projects() {
 
       <p>
         I&apos;ve recently began a{" "}
-        <a
-          href="https://github.com/adamwgriffin/search-II"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/adamwgriffin/search-II" target="_blank">
           third iteration
         </a>
         . This latest version is no longer a monolith. I have a{" "}
         <a
           href="https://github.com/adamwgriffin/listing_service"
           target="_blank"
-          rel="noopener noreferrer"
         >
           separate real estate listing search service
         </a>{" "}
@@ -100,7 +87,6 @@ export default function Projects() {
         <a
           href="https://github.com/adamwgriffin/listing-service-postgis-db"
           target="_blank"
-          rel="noopener noreferrer"
         >
           put together most of the necessary database tables and queries
         </a>{" "}

@@ -27,7 +27,7 @@ export default function Page() {
         enjoy the emphasis on simplicity in the language but I have yet to truly
         become a &quot;Gopher.&quot; Maybe someday. You can check out{" "}
         <Link href="/projects">my projects</Link>, or my{" "}
-        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+        <a href={socialLinks.github} target="_blank">
           Github
         </a>
         , to see some of the stuff I work on.
@@ -43,15 +43,11 @@ export default function Page() {
 
       <p>
         If you have a role you think I might be interested in, hit me up via{" "}
-        <a href={socialLinks.email} target="_blank" rel="noopener noreferrer">
+        <a href={socialLinks.email} target="_blank">
           email
         </a>{" "}
         or message me on{" "}
-        <a
-          href={socialLinks.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={socialLinks.linkedin} target="_blank">
           LinkedIn
         </a>
         .

@@ -14,5 +14,5 @@ export function CustomLink(
   if (href?.startsWith("#")) {
     return <a {...props} />;
   }
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
+  return <a target="_blank" {...props} />;
 }
