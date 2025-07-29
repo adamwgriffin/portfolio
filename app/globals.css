@@ -6,8 +6,13 @@
 
 @layer base {
   ::selection {
+    background-color: var(--color-pink-100);
+    color: var(--color-purple-500);
+  }
+
+  .dark ::selection {
     background-color: var(--color-purple-400);
-    color: #fefefe;
+    color: var(--color-pink-100);
   }
 
   html {
@@ -90,11 +95,17 @@
 }
 
 .prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em] font-normal text-[#000000] dark:text-[#FFFFFF];
+  @apply transition-all decoration-neutral-400
+    dark:decoration-neutral-600
+    underline-offset-2
+    decoration-[0.1em]
+    font-normal
+    text-[#000000]
+    dark:text-[#FFFFFF];
 }
 
 .prose a:hover {
-  @apply dark:decoration-neutral-400 decoration-neutral-600;
+  @apply text-zinc-500;
 }
 
 .prose .anchor:after {

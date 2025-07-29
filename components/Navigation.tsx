@@ -22,7 +22,8 @@ export function Navigation() {
           aria-current={path === currentPathname ? "page" : false}
           className="flex align-middle relative whitespace-nowrap transition-all
             duration-300 not-aria-[current=page]:hover:text-zinc-400
-            aria-[current=page]:text-purple-400
+            aria-[current=page]:text-purple-500
+            dark:aria-[current=page]:text-purple-400
             aria-[current=page]:font-semibold text-xl"
         >
           {name}
