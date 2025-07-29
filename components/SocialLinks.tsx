@@ -21,7 +21,7 @@ export function SocialLinks() {
       <a
         href="/rss.xml"
         target="_self"
-        className="transition-all duration-350 hover:text-purple-500/100"
+        className="transition-all duration-300 hover:text-zinc-400"
       >
         <FaRss />
       </a>

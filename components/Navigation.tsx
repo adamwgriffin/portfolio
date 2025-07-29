@@ -21,11 +21,9 @@ export function Navigation() {
           href={path}
           aria-current={path === currentPathname ? "page" : false}
           className="flex align-middle relative whitespace-nowrap transition-all
-            duration-350 not-aria-[current=page]:hover:text-violet-400/100
-            dark:not-aria-[current=page]:hover:text-violet-300/100
-            aria-[current=page]:text-purple-500
-            dark:aria-[current=page]:text-violet-300
-            aria-[current=page]:font-bold text-xl"
+            duration-300 not-aria-[current=page]:hover:text-zinc-400
+            aria-[current=page]:text-purple-400
+            aria-[current=page]:font-semibold text-xl"
         >
           {name}
         </Link>

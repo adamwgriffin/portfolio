@@ -9,7 +9,7 @@ export function SocialLink({ href, children }: SocialLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="transition-all duration-350 hover:text-purple-500/100"
+      className="transition-all duration-300 hover:text-zinc-400"
     >
       {children}
     </a>
