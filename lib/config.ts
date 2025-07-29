@@ -11,3 +11,10 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/adamwgriffin/",
   email: "mailto:job@adamgriffin.io"
 };
+
+export const navItems = {
+  "/": { name: "About Me" },
+  "/projects": { name: "Projects" },
+  "/experience": { name: "Experience" },
+  "/stack": { name: "Tech Stack" }
+};

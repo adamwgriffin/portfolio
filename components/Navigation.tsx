@@ -1,14 +1,8 @@
 "use client";
 
+import { navItems } from "@/lib/config";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navItems = {
-  "/": { name: "About Me" },
-  "/experience": { name: "Experience" },
-  "/projects": { name: "Projects" },
-  "/stack": { name: "Tech Stack" }
-};
 
 export function Navigation() {
   const currentPathname = usePathname();
