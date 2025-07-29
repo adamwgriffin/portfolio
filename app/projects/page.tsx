@@ -19,12 +19,10 @@ export default function Projects() {
         </a>
         . It&apos;s not meant as a serious endeavor, more of a learning tool. I
         wanted to use it as a means to get better with Next.js, Typescript and
-        Node, as well as a host of other things. I chose a real estate search
-        app for the project mostly because it was something I was already
-        familiar with from my work experience. I also wanted to understand how I
-        could improve upon the kind of app I had worked on previously. I&apos;m
-        hosting the app on Vercel. The database is hosted on MongoDB Atlas, and
-        I&apos;m using ImageKit to host my images.
+        Node, as well as other things. I chose a real estate search app so that
+        I could demonstrate the kind of code I have experience working on.
+        I&apos;m hosting the app on Vercel. The database is hosted on MongoDB
+        Atlas, and I&apos;m using ImageKit to host my images.
       </p>
 
       <figure>
@@ -54,12 +52,20 @@ export default function Projects() {
       <p>
         Iterating through continuous improvement has actually been a theme of
         this project. I originally started out with an{" "}
-        <a href="https://github.com/adamwgriffin/vue-search" target="_blank">
+        <a
+          href="https://github.com/adamwgriffin/vue-search"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           app written in Vue
         </a>{" "}
         that was much closer to the app I worked on professionally. After that,
-        I pivoted to something more challenging:{" "}
-        <a href="https://github.com/adamwgriffin/search" target="_blank">
+        I pivoted to{" "}
+        <a
+          href="https://github.com/adamwgriffin/search"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           rewriting everything in Next.js with Typescript
         </a>
         . That version is they one that is currently being used for the
@@ -68,13 +74,18 @@ export default function Projects() {
 
       <p>
         I&apos;ve recently began a{" "}
-        <a href="https://github.com/adamwgriffin/search-II" target="_blank">
+        <a
+          href="https://github.com/adamwgriffin/search-II"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           third iteration
         </a>
         . This latest version is no longer a monolith. I have a{" "}
         <a
           href="https://github.com/adamwgriffin/listing_service"
           target="_blank"
+          rel="noopener noreferrer"
         >
           separate real estate listing search service
         </a>{" "}
@@ -84,14 +95,26 @@ export default function Projects() {
       </p>
 
       <p>
-        Recently, I&apos;ve decided to try going back to using Postgres with
-        PostGIS, which is what I had used for work. I{" "}
-        <a href="https://github.com/adamwgriffin/listing-service-postgis-db">
+        I&apos;ve also wanted to try going back to using Postgres with PostGIS,
+        which is what I had used for work. I{" "}
+        <a
+          href="https://github.com/adamwgriffin/listing-service-postgis-db"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           put together most of the necessary database tables and queries
         </a>{" "}
-        needed for a listing service. I started work on yet another listing
-        service, this time written in Go that uses this PostGIS database, but
-        progress has been slower on that front.
+        needed for the listing service but haven&apos;t gotten around to
+        rewiting it yet.
+      </p>
+
+      <h1 className="text-2xl">This Website</h1>
+
+      <p>
+        It&apos;s not the largest project in the world but putting together this
+        site has been a fun thing to work on. I&apos;ve learned more about how
+        to optimize a site for SEO with Next.js. I&apos;ve also spent some time
+        learning the Motion animation library as well as Motion Primitives.
       </p>
     </AnimatedSection>
   );
