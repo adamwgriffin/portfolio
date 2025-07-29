@@ -1,7 +1,7 @@
-import { SocialLink } from "./SocialLink";
 import { socialLinks } from "@/lib/config";
-import { FaGithub, FaLinkedinIn, FaRss } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
+import { SocialLink } from "./SocialLink";
 
 export function SocialLinks() {
   return (
@@ -18,13 +18,13 @@ export function SocialLinks() {
       <SocialLink href={socialLinks.email}>
         <TbMailFilled />
       </SocialLink>
-      <a
+      {/* <a
         href="/rss.xml"
         target="_self"
         className="transition-all duration-300 hover:text-zinc-400"
       >
         <FaRss />
-      </a>
+      </a> */}
     </div>
   );
 }
