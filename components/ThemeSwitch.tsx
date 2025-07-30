@@ -1,69 +1,54 @@
 "use client";
 
-import { AnimatedBackground } from "@/components/motion-primitives/animated-background";
-import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-
-const themesOptions = [
-  {
-    label: "Light",
-    id: "light",
-    icon: <SunIcon className="h-4 w-4" />
-  },
-  {
-    label: "Dark",
-    id: "dark",
-    icon: <MoonIcon className="h-4 w-4" />
-  },
-  {
-    label: "System",
-    id: "system",
-    icon: <MonitorIcon className="h-4 w-4" />
-  }
-];
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 export function ThemeSwitch() {
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
   return (
-    <AnimatedBackground
-      className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
-      defaultValue={theme}
-      transition={{
-        type: "spring",
-        duration: 0.4
-      }}
-      enableHover={false}
-      onValueChange={(id) => {
-        if (id) setTheme(id);
-      }}
-    >
-      {themesOptions.map((theme) => {
-        return (
-          <button
-            key={theme.id}
-            className="inline-flex h-7 w-7 items-center justify-center
-              text-zinc-500 transition-colors duration-100
-              focus-visible:outline-2 data-[checked=true]:text-zinc-950
-              dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
-            type="button"
-            aria-label={`Switch to ${theme.label} theme`}
-            data-id={theme.id}
-          >
-            {theme.icon}
-          </button>
-        );
-      })}
-    </AnimatedBackground>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <Sun
+            className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all
+              dark:scale-0 dark:-rotate-90"
+          />
+          <Moon
+            className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90
+              transition-all dark:scale-100 dark:rotate-0"
+          />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuCheckboxItem
+          checked={theme === "light"}
+          onCheckedChange={() => setTheme("light")}
+        >
+          Light
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={theme === "dark"}
+          onCheckedChange={() => setTheme("dark")}
+        >
+          Dark
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={theme === "system"}
+          onCheckedChange={() => setTheme("system")}
+        >
+          System
+        </DropdownMenuCheckboxItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
