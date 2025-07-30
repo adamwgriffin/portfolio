@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuCheckboxItem,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
