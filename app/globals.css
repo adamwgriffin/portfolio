@@ -62,6 +62,13 @@
   }
 }
 
+@layer utilities {
+  .shape-circle {
+    shape-outside: circle();
+    clip-path: circle();
+  }
+}
+
 /* Light theme colors */
 :root {
   --sh-class: #2d5e9d;
