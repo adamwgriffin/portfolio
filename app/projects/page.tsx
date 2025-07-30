@@ -17,12 +17,11 @@ export default function Projects() {
         <a href="https://awsom.homes/" target="_blank">
           &quot;Awsom&quot;
         </a>
-        . It&apos;s not meant as a serious endeavor, more of a learning tool. I
-        wanted to use it as a means to get better with Next.js, Typescript and
-        Node, as well as other things. I chose a real estate search app so that
-        I could demonstrate the kind of code I have experience working on.
-        I&apos;m hosting the app on Vercel. The database is hosted on MongoDB
-        Atlas, and I&apos;m using ImageKit to host my images.
+        . The main goal of the project is to use it as a means to get better
+        with Next.js, Typescript, Node and other libraries, as well as to
+        demonstrate the kind of code I have experience working on. I&apos;m
+        hosting the app on Vercel. The database is hosted on MongoDB Atlas, and
+        I&apos;m using ImageKit to host my images.
       </p>
 
       <figure>
@@ -53,14 +52,14 @@ export default function Projects() {
         Iterating through continuous improvement has actually been a theme of
         this project. I originally started out with an{" "}
         <a href="https://github.com/adamwgriffin/vue-search" target="_blank">
-          app written in Vue
+          app written with Vue
         </a>{" "}
         that was much closer to the app I worked on professionally. After that,
         I pivoted to{" "}
         <a href="https://github.com/adamwgriffin/search" target="_blank">
           rewriting everything in Next.js with Typescript
         </a>
-        . That version is they one that is currently being used for the
+        . That version is the one that is currently being used for the
         awsom.homes site.
       </p>
 
@@ -76,7 +75,7 @@ export default function Projects() {
         >
           separate real estate listing search service
         </a>{" "}
-        written in Koa. For the frontend, I chose a simpler approach, using
+        that uses Koa. For the frontend, I chose a simpler approach, using
         Tailwind with Shadcn for components, rather than writing everything from
         scratch, as I had previously done.
       </p>
@@ -91,7 +90,7 @@ export default function Projects() {
           put together most of the necessary database tables and queries
         </a>{" "}
         needed for the listing service but haven&apos;t gotten around to
-        rewiting it yet.
+        rewiting the service with this yet.
       </p>
 
       <h1 className="text-2xl">This Website</h1>
@@ -100,7 +99,8 @@ export default function Projects() {
         It&apos;s not the largest project in the world but putting together this
         site has been a fun thing to work on. I&apos;ve learned more about how
         to optimize a site for SEO with Next.js. I&apos;ve also spent some time
-        learning the Motion animation library as well as Motion Primitives.
+        learning the Motion animation library as well as the Motion-Primitives
+        UI kit.
       </p>
     </AnimatedSection>
   );
