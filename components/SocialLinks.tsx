@@ -10,13 +10,13 @@ export function SocialLinks() {
         hover:opacity-90"
     >
       <SocialLink href={socialLinks.github}>
-        <FaGithub />
+        <FaGithub className="text-xl" />
       </SocialLink>
       <SocialLink href={socialLinks.linkedin}>
-        <FaLinkedinIn />
+        <FaLinkedinIn className="text-xl" />
       </SocialLink>
       <SocialLink href={socialLinks.email}>
-        <TbMailFilled />
+        <TbMailFilled className="text-xl" />
       </SocialLink>
       {/* <a
         href="/rss.xml"
