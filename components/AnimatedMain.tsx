@@ -14,13 +14,13 @@ const variantsContainer: Variants = {
 
 export type AnimatedMainProps = React.ComponentProps<typeof motion.main>;
 
-export function AnimatedMain({ children }: { children: React.ReactNode }) {
+export function AnimatedMain({ children, ...props }: AnimatedMainProps) {
   return (
     <motion.main
-      className="space-y-24"
       variants={variantsContainer}
       initial="hidden"
       animate="visible"
+      {...props}
     >
       {children}
     </motion.main>

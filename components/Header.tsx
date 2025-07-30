@@ -2,13 +2,12 @@
 
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Navigation } from "@/components/Navigation";
-import { ThemeSwitch } from "./ThemeSwitch";
 import { AnimatedFadeInDiv } from "@/components/AnimatedFadeInDiv";
 import { AdamGriffinLogo } from "@/components/AdamGriffinLogo";
 
 export function Header() {
   return (
-    <header className="py-12">
+    <header>
       <div className="text-center md:text-left">
         <AnimatedFadeInDiv>
           <AdamGriffinLogo className="mb-2 max-w-xl" />
@@ -21,14 +20,9 @@ export function Header() {
         >
           Software Engineer
         </TextEffect>
-        <AnimatedFadeInDiv
-          className="flex flex-col items-center md:flex-row md:justify-between
-            pt-8 gap-4"
-        >
+        <AnimatedFadeInDiv className="flex flex-col items-center md:flex-row
+          pt-8">
           <Navigation />
-          <div className="h-7">
-            <ThemeSwitch />
-          </div>
         </AnimatedFadeInDiv>
       </div>
     </header>

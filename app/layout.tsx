@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 import { metaData } from "@/lib/config";
 import { AnimatedMain } from "@/components/AnimatedMain";
+import { ThemeSwitch } from "@/components/ThemeSwitch";
 
 const geist = Geist({
   variable: "--font-geist",
@@ -77,15 +78,19 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased px-12">
+      <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div
-            className="max-w-2xl w-full m-auto grid grid-rows-[auto_1fr_auto]
-              min-h-screen"
-          >
-            <Header />
-            <AnimatedMain>{children}</AnimatedMain>
-            <Footer />
+          <div className="min-h-screen grid grid-rows-[auto_1fr]">
+            <div className="text-right px-4 pt-4 pb-6">
+              <ThemeSwitch />
+            </div>
+            <div
+              className="grid grid-rows-[auto_1fr_auto] max-w-2xl mx-auto px-12"
+            >
+              <Header />
+              <AnimatedMain className="pt-12">{children}</AnimatedMain>
+              <Footer />
+            </div>
             <Analytics />
             <SpeedInsights />
           </div>
