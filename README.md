@@ -1,6 +1,7 @@
 # Portfolio
 
-My portfolio. Based on [Nextfolio](https://github.com/3p5ilon/Nextfolio).
+My portfolio. Based on [Nextfolio](https://github.com/3p5ilon/Nextfolio), using
+[Motion](https://motion.dev/) and [Motion-Primitives](https://motion-primitives.com/) for animations.
 
 ## Installation
 
@@ -17,9 +18,3 @@ bun dev
 ```
 
 The server will be running at [http://localhost:3000](http://localhost:3000).
-
-## Configuration
-
-1. Update the site metadata and social links in `app/config.ts` to set up SEO, feeds, social links, and Open Graph settings.
-2. Update the routes in `app/sitemap.ts` for SEO optimization.
-3. Update the blog posts in the `/content` folder.
