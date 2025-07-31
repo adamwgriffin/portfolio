@@ -38,7 +38,12 @@ export default function Page() {
         React/Angular/Vue. My job has been as a full stack developer but
         I&apos;ve always had a strong interest in frontend development.
         I&apos;ve worked on several real estate (Proptech) SaaS apps over the
-        years, such as listing search and a CRM.
+        years, such as listing search and a CRM. You can see the listing search
+        I worked on in production at{" "}
+        <a href="https://www.windermere.com/search" target="_blank">
+          Windermere.com
+        </a>
+        , one of the many sites where it has been deployed.
       </p>
 
       <p>

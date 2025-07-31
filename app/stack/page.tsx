@@ -101,7 +101,7 @@ export default function Page() {
               <li>Google Maps API</li>
               <li>Google People API</li>
               <li>Exchange Web Services (EWS)</li>
-              <li>BrainTree payment service</li>
+              <li>Braintree Payment API</li>
             </ul>
           </div>
         </AccordianItemWithIcon>
