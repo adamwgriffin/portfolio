@@ -113,16 +113,25 @@ export default function Page() {
           </p>
           <h3>Responsibilities</h3>
           <ul>
-            <li>Created Support Admin app for Client Services department</li>
             <li>
-              Investigated issues for Account Management team. These were
-              important issues that had been escalated by our clients directly
-              to whoever was handling their account.
+              Created Support Admin app for Client Services department. The app
+              made in much easier for Support to accomplish tasks that
+              previously required knowledge of how to login to a Linux server
+              and execute shells scripts on the command line.
+            </li>
+            <li>
+              Developed software and wrote SQL queries to make it easier to
+              troubleshoot Support issues.
+            </li>
+            <li>Fixed bugs in our customer facing products for Engineering.</li>
+            <li>
+              Investigated important issues for clients that were escalated to
+              Account Management team.
             </li>
             <li>
               Managed &quot;Support Triage&quot; in our ticketing system to
-              ensure ticket quality and handle any issues that I was able to fix
-              myself before handing off to other departments
+              ensure ticket quality and handle any technical issues that I was
+              able to fix myself before handing off to other departments.
             </li>
           </ul>
         </li>
