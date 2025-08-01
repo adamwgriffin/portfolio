@@ -109,7 +109,10 @@ export default function Page() {
             of Tier 3 support. Half of my time was usually devoted to solving
             more advanced technical issues for our customers, the other half was
             devoted to developing software tools for the team. I also worked on
-            some of the company&apos;s customer facing products as well.
+            some of the companys customer facing products as well. When I was
+            writing code in this role my tech stack was Ruby on Rails,
+            Javascript with jQuery, Sass for CSS styling and Postgres for the
+            database.
           </p>
           <h3>Responsibilities</h3>
           <ul>
