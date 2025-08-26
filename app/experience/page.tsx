@@ -13,7 +13,7 @@ export default function Page() {
         <p>
           My experience mainly involves working as a full stack developer, with
           Ruby on Rails on the backend and React, Angular or Vue on the
-          frontend, with Postgresql as the database. The apps I worked on had a
+          frontend, with PostgreSQL as the database. The apps I worked on had a
           kind of hybrid monolith architecture where the app had its own
           database for data it controlled but relied on several different
           microservices for things like authentication or sending email

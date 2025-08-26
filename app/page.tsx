@@ -17,15 +17,12 @@ export default function Page() {
         priority
       />
       <p>
-        I&apos;m a web developer living in Seattle, WA. In my spare time I
-        mostly use Typescript with Next.js and Node. I&apos;m fond of{" "}
-        <a href="https://koajs.com/" target="_blank">
-          Koa
-        </a>{" "}
-        as a backend framework too. I use MongoDB a lot but I&apos;m also a fan
-        of Postgres. Occasionally I dabble in Go and the Gin web framework. I
-        enjoy the emphasis on simplicity in the language but I have yet to truly
-        become a &quot;Gopher.&quot; Maybe someday. You can check out{" "}
+        I&apos;m a web developer living in Seattle, WA. In my spare time
+        I&apos;ve been using Typescript with Next.js and Node. I&apos;ve built a
+        couple things with Rails too. I use Postgres or MongoDB for my database.
+        Occasionally I dabble in Go and the Gin web framework. I enjoy the
+        emphasis on simplicity in the language but I have yet to truly become a
+        &quot;Gopher.&quot; Maybe someday. You can check out{" "}
         <Link href="/projects">my projects</Link>, or my{" "}
         <a href={socialLinks.github} target="_blank">
           Github
@@ -34,12 +31,11 @@ export default function Page() {
       </p>
 
       <p>
-        At work my tech stack has primarily been Ruby on Rails, Postgres and
-        React/Angular/Vue. My job has been as a full stack developer but
-        I&apos;ve always had a strong interest in frontend development.
-        I&apos;ve worked on several real estate (Proptech) SaaS apps over the
-        years, such as listing search and a CRM. You can see the listing search
-        I worked on in production at{" "}
+        At work, my tech stack has primarily been Ruby on Rails, Postgres and
+        React/Angular/Vue. My job has been as a full stack developer. I&apos;ve
+        worked on several real estate (Proptech) SaaS apps over the years, such
+        as listing search and a CRM. You can see the listing search I worked on
+        in production at{" "}
         <a href="https://www.windermere.com/search" target="_blank">
           Windermere.com
         </a>
