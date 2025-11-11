@@ -43,14 +43,14 @@ export default function Page() {
       </div>
       <ul>
         <li className="prose mb-12">
-          <h2>Software Engineer</h2>
+          <h2>Senior Software Engineer</h2>
           <div>
             <a href="https://moxiworks.com/" target="_blank">
               MoxiWorks
             </a>
           </div>
           <div>Seattle, WA</div>
-          <div>Nov 2016 - May 2024 · 7 yrs 7 mos</div>
+          <div>Nov 2016 - May 2024</div>
           <p>
             I worked as a full stack developer on several SaaS web app products
             that are used by many well-known real estate brokerages, such as
@@ -59,37 +59,78 @@ export default function Page() {
             projects I worked on all used Ruby on Rails for the backend along
             with React, Angular or Vue for the frontend.
           </p>
-          <h3>Responsibilities</h3>
+          <h3>Accomplishments</h3>
           <ul>
             <li>
-              Lead developer on real estate listing search. The search feature
-              powers many brokerage/agent websites. It&apos;s also used in
-              several other products, like the CRM and CMA apps.
+              Lead developer on a real estate search feature used on around
+              400,000 sites catering to brokerages, offices, and individual
+              agents. This included some high traffic sites such as
+              <a href="https://www.windermere.com/" target="_blank">
+                windermere.com
+              </a>{" "}
+              and{" "}
+              <a href="https://www.c21.ca/" target="_blank">
+                c21.ca
+              </a>
+              . The feature was also used in our CRM and CMA proptech products.
             </li>
             <li>
-              Worked on company&apos;s flagship product, a CRM for real estate
-              agents that is used to manage their contacts and listing
-              transactions, as well as do email marketing campaigns. I worked on
-              some of this team&apos;s more high stakes projects. I also
-              provided support/mentoring to some of the more junior devs on the
-              team.
+              Helped create a feature to allow 60k users from our largest client
+              to automatically migrate their CRM email sync accounts to new
+              email hosting providers.
             </li>
             <li>
-              Lead developer on the Advertising Platform product, a marketing
-              tool for automating the creation of real estate listing ads.
+              Worked to identify and fix an issue for one of our most important
+              clients that was blocking 10k customers from using our product. We
+              shipped a large feature to fix the issue within a few weeks and I
+              received a personal thank you from our CEO for my work on it.
             </li>
             <li>
-              Lead developer on an administrative app for real estate companies
-              to manage their agents and listings. It was also used for backend
-              tools for our company. This involved a lot of role-based
-              permissions, so that only certain admins could edit different
-              types of office info or listing data.
+              Improved performance of our CRM bulk group update feature so that
+              it took a few seconds, rather than a few minutes, to update
+              contacts that belong to a group, fixing an issue that effected
+              hundreds of users trying to send out bulk emails to their clients.
             </li>
             <li>
-              Worked on CMA, a presentation builder that uses listing data to
-              create a comparative market analysis (CMA) for clients looking to
-              buy or sell a home. I worked on both the listing search and
-              presentation pages for this project.
+              Lead a team of developers working on an ad creation feature that
+              created real estate listing ads automatically based on an
+              office&apos;s real estate listing data, which helped generate
+              additional revenue for the company.
+            </li>
+            <li>
+              Lead a team of developers working on a Canadian Anti-Spam
+              Legislation (CASL) feature that allowed real estate agents to
+              manage compliance with anti-spam laws throughout our system.
+            </li>
+            <li>
+              Took the initiative to eliminate unnecessary logging in our CRM
+              app cutting expensive log ingestion service costs in half.
+            </li>
+            <li>
+              Created self-service features for our largest customer to allow
+              them to manage their own company admin in our system, reducing
+              one-third of the requests that were coming into Support.
+            </li>
+            <li>
+              Mentored and assisted a team of seven developers through pair
+              programming and code review.
+            </li>
+            <li>
+              Added I18n language support and currency rate conversion to our
+              website search so that users could display French and view listing
+              prices adjusted for Canadian dollars on the Century 21 Canada site
+              (
+              <a href="https://www.c21.ca/" target="_blank">
+                c21.ca
+              </a>
+              ).
+            </li>
+            <li>
+              Worked with a cross-functional team to integrate the search
+              feature I worked on into our CRM app to create a new saved search
+              feature where agents could search for real estate listings via a
+              map search and create a saved search to collaborate with their
+              clients.
             </li>
           </ul>
         </li>
@@ -114,27 +155,32 @@ export default function Page() {
             Javascript with jQuery, Sass for CSS styling and Postgres for the
             database.
           </p>
-          <h3>Responsibilities</h3>
+          <h3>Accomplishments</h3>
           <ul>
             <li>
-              Created Support Admin app for Client Services department. The app
-              made in much easier for Support to accomplish tasks that
-              previously required knowledge of how to login to a Linux server
-              and execute shells scripts on the command line.
+              Created app for Tech Support that made it much easier to
+              accomplish tasks that previously required lots of technical
+              knowledge and the ability to run arcane commands in the terminal.
+              The app was still in use 9 years after I originally made it.
             </li>
             <li>
-              Developed software and wrote SQL queries to make it easier to
-              troubleshoot Support issues.
+              Helped build the Roster app which allowed us to finally remove the
+              remainder of our old legacy codebase, accomplishing an important
+              goal for the Engineering team.
             </li>
-            <li>Fixed bugs in our customer facing products for Engineering.</li>
+            <li>
+              Created a tool to automatically migrate customer contacts from our
+              old system into a new one. This tool dramatically accelerated the
+              process since agents were having to manually convert the contacts
+              themselves using a spreadsheet.
+            </li>
+            <li>
+              Developed software to automate troubleshooting of real estate
+              listing data issues.
+            </li>
             <li>
               Investigated important issues for clients that were escalated to
-              Account Management team.
-            </li>
-            <li>
-              Managed &quot;Support Triage&quot; in our ticketing system to
-              ensure ticket quality and handle any technical issues that I was
-              able to fix myself before handing off to other departments.
+              the Account Management team.
             </li>
           </ul>
         </li>
