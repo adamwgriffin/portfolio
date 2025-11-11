@@ -19,7 +19,7 @@ export default function Projects() {
         </a>
         . The main goal of the project is to use it as a means to get better
         with Next.js, Typescript, Node and other libraries, as well as to
-        demonstrate the kind of code I have experience working on. I&apos;m
+        demonstrate the kind of app I have experience working on. I&apos;m
         hosting the app on Vercel, the database is hosted on MongoDB Atlas and
         I&apos;m using ImageKit to host my images.
       </p>
