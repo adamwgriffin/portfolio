@@ -18,10 +18,11 @@ export function Header() {
           className="text-3xl sm:text-4xl text-zinc-400"
           delay={0.4}
         >
-          Software Engineer
+          Senior Software Engineer
         </TextEffect>
-        <AnimatedFadeInDiv className="flex flex-col items-center md:flex-row
-          pt-8">
+        <AnimatedFadeInDiv
+          className="flex flex-col items-center md:flex-row pt-8"
+        >
           <Navigation />
         </AnimatedFadeInDiv>
       </div>
