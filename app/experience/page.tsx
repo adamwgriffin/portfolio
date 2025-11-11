@@ -64,7 +64,7 @@ export default function Page() {
             <li>
               Lead developer on a real estate search feature used on around
               400,000 sites catering to brokerages, offices, and individual
-              agents. This included some high traffic sites such as
+              agents. This included some high traffic sites such as{" "}
               <a href="https://www.windermere.com/" target="_blank">
                 windermere.com
               </a>{" "}
