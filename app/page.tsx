@@ -20,10 +20,7 @@ export default function Page() {
         I&apos;m a web developer living in Seattle, WA. In my spare time
         I&apos;ve been using Typescript with Next.js and Node. I&apos;ve built a
         couple things with Rails too. I use Postgres or MongoDB for my database.
-        Occasionally I dabble in Go and the Gin web framework. I enjoy the
-        emphasis on simplicity in the language but I have yet to truly become a
-        &quot;Gopher.&quot; Maybe someday. You can check out{" "}
-        <Link href="/projects">my projects</Link>, or my{" "}
+        You can check out <Link href="/projects">my projects</Link>, or my{" "}
         <a href={socialLinks.github} target="_blank">
           Github
         </a>
@@ -34,8 +31,14 @@ export default function Page() {
         At work, my tech stack has primarily been Ruby on Rails, Postgres and
         React/Angular/Vue. My job has been as a full stack developer. I&apos;ve
         worked on several real estate (Proptech) SaaS apps over the years, such
-        as listing search and a CRM. You can see the listing search I worked on
-        in production at{" "}
+        as listing search and a{" "}
+        <a
+          href="https://moxiworks.com/solutions/real-estate-crm/"
+          target="_blank"
+        >
+          CRM
+        </a>
+        . You can see the listing search I worked on in production at{" "}
         <a href="https://www.windermere.com/search" target="_blank">
           Windermere.com
         </a>
