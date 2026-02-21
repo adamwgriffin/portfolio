@@ -33,6 +33,7 @@ export default function Projects() {
             width={989}
             height={595}
             className="rounded-md border border-gray-100 shadow-lg"
+            priority
           />
           <figcaption>The awsome.homes website.</figcaption>
         </figure>
@@ -137,7 +138,6 @@ export default function Projects() {
             alt="The Betterboxd website"
             width={989}
             height={595}
-            priority
             className="rounded-md border border-gray-100 shadow-lg"
           />
           <figcaption>
