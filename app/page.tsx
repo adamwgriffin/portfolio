@@ -7,11 +7,10 @@ export default function Page() {
   return (
     <AnimatedSection className="prose">
       <Image
-        src="/adam-2-transparent.png"
+        src="/adam.png"
         alt="Photo of Adam Griffin"
-        className="rounded-full shape-circle block mx-auto sm:m-1 sm:float-right
-          bg-gradient-to-tr from-purple-300 to-pink-100 dark:from-purple-400
-          dark:to-pink-200 to-50%"
+        className="rounded-full shape-circle block mx-auto sm:m-1
+          sm:float-right"
         width={160}
         height={160}
         priority
