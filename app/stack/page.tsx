@@ -22,11 +22,9 @@ export default function Page() {
           <ul>
             <li>Typescript</li>
             <li>Javascript</li>
-            <li>Coffeescript</li>
             <li>Ruby</li>
             <li>SQL</li>
             <li>CSS</li>
-            <li>Sass</li>
           </ul>
         </div>
 
@@ -40,7 +38,6 @@ export default function Page() {
             <li>Ruby on Rails</li>
             <li>Koa</li>
             <li>Express</li>
-            <li>Backbone</li>
           </ul>
         </div>
 
@@ -61,8 +58,6 @@ export default function Page() {
             <li>Jest</li>
             <li>Mocha/Chai</li>
             <li>Rspec</li>
-            <li>PDFreactor (service that converts HTML document to PDF)</li>
-            <li>Jenkins</li>
           </ul>
         </div>
 
@@ -77,13 +72,9 @@ export default function Page() {
             <li>Mongoose</li>
             <li>D3</li>
             <li>Redux/Redux Toolkit</li>
-            <li>RxJS</li>
-            <li>jQuery</li>
             <li>NextAuth (Auth.js)</li>
             <li>Turf (Javascript geospatial library)</li>
             <li>Faker</li>
-            <li>Bootstrap</li>
-            <li>Materialize</li>
           </ul>
         </div>
 
