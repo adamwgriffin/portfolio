@@ -12,6 +12,8 @@ const eslintConfig = [
       ".next/",
       "dist/",
       "out/",
+      "build/",
+      "next-env.d.ts",
       "components/motion-primitives/"
     ]
   },
