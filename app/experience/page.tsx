@@ -27,7 +27,7 @@ export default function Page() {
       </div>
       <ul>
         <li className="prose mb-12">
-          <h2>Senior Software Engineer</h2>
+          <h2>Software Engineer</h2>
           <div>
             <a href="https://moxiworks.com/" target="_blank">
               MoxiWorks
@@ -75,7 +75,7 @@ export default function Page() {
         </li>
 
         <li className="prose mb-12">
-          <h2>Client Services Support Developer</h2>
+          <h2>Customer Success Engineer</h2>
           <div>
             <a href="https://moxiworks.com/" target="_blank">
               MoxiWorks
